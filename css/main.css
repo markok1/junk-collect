@@ -726,6 +726,9 @@ input[type=radio]:checked + .form-dropdown-label {
 .get-a-quote .wrapper .small-text-box p {
   color: var(--neutral-white, #fff);
 }
+.get-a-quote .text-small {
+  font-size: 13px;
+}
 
 .get-a-quote-message {
   text-align: center;
