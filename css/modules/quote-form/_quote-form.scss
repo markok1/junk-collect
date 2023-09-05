@@ -1,10 +1,14 @@
+// //hides the entire section, when transitioning between the
+// screens add the hide-form class to the form holder and than close it by adding
+// a display none to the whole section to get rid of the blur
 .quote-form {
-  .blur {
-    background: var(--neutral-grey-dark, rgba(17, 17, 17, 0.64));
-    position: fixed;
-    inset: 0;
-    z-index: 2;
-  }
+  display: none;
+}
+.blur {
+  background: var(--neutral-grey-dark, rgba(17, 17, 17, 0.64));
+  position: fixed;
+  inset: 0;
+  z-index: 1;
 }
 .form-holder {
   background: var(--neutral-white, #fff);
@@ -25,14 +29,16 @@
   gap: var(--spacing-24, 24px);
   border-radius: var(--border-8, 8px);
   h3 {
+    width: 100%;
     text-align: center;
     text-transform: capitalize;
   }
-  .close-form {
-    position: absolute;
-    top: 6px;
-    right: 6px;
-  }
+}
+.close-form {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  cursor: pointer;
 }
 .quote-form-top {
   background: var(--color-primary, #005299);
@@ -52,4 +58,29 @@
     color: var(--neutral-white, #fff);
     font-weight: 500;
   }
+}
+
+.quote-form--completed {
+  position: fixed;
+  z-index: 4;
+  top: 10vh;
+  left: 8px;
+  right: 8px;
+
+  border-radius: var(--radius-8, 8px);
+  background: var(--neutral-white, #fff);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 358px;
+  margin: auto;
+  padding: var(--padding-32, 32px) var(--padding-16, 16px);
+  flex-direction: column;
+  gap: var(--24px, 24px);
+
+  text-align: center;
+}
+.hide-form {
+  display: none;
 }

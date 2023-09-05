@@ -144,6 +144,7 @@ h1 {
 }
 
 h2 {
+  color: var(--color-primary, #005299);
   text-align: center;
   font-family: "Roboto-condensed", sans-serif;
   font-size: 36px;
@@ -476,7 +477,7 @@ input[type=radio]:checked + .form-dropdown-label {
   max-height: 60px;
   width: 100%;
   bottom: 0px;
-  z-index: 3;
+  z-index: 10;
 }
 .sticky-bottom a {
   display: flex;
@@ -582,9 +583,6 @@ input[type=radio]:checked + .form-dropdown-label {
   align-items: center;
   gap: var(--spacing-16, 16px);
 }
-.why-top h2 {
-  color: var(--color-primary, #005299);
-}
 
 .why-us-cards {
   display: flex;
@@ -617,7 +615,6 @@ input[type=radio]:checked + .form-dropdown-label {
 }
 .testimonials .wrapper h2 {
   padding-top: 32px;
-  color: var(--color-primary, #005299);
 }
 .testimonials .wrapper .bottom-boxes .small-text-box {
   width: 100%;
@@ -670,16 +667,34 @@ input[type=radio]:checked + .form-dropdown-label {
 }
 
 .get-a-quote {
-  background: linear-gradient(0deg, var(--neutral-grey-dark, rgba(17, 17, 17, 0.64)) 0%, var(--neutral-grey-dark, rgba(17, 17, 17, 0.64)) 100%), url("../img/quotebg.webp"), lightgray 50%;
-  background-size: auto 150%;
-  background-position: center;
-  background-repeat: no-repeat;
+  position: relative;
+}
+.get-a-quote .background-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.get-a-quote .background-image::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(0deg, rgba(17, 17, 17, 0.64) 0%, rgba(17, 17, 17, 0.64) 100%);
+  width: 100%;
+  height: 100%;
 }
 .get-a-quote .wrapper {
   display: flex;
   padding: var(--padding-80, 80px) var(--padding-16, 16px);
   flex-direction: column;
   align-items: center;
+  position: relative;
+  z-index: 3;
 }
 .get-a-quote .wrapper h2 {
   color: var(--neutral-white, #fff);
@@ -704,6 +719,82 @@ input[type=radio]:checked + .form-dropdown-label {
   color: var(--neutral-white, #fff);
 }
 
+.get-a-quote-message {
+  text-align: center;
+  display: none;
+}
+.get-a-quote-message > svg {
+  margin-bottom: 16px;
+}
+.get-a-quote-message h2 {
+  color: var(--neutral-white, #fff);
+  margin-bottom: 24px;
+}
+.get-a-quote-message .sub-text {
+  color: var(--neutral-white, #fff);
+  position: relative;
+  margin-bottom: 16px;
+}
+.get-a-quote-message .message-box {
+  margin-bottom: 16px;
+}
+.get-a-quote-message .bottom-boxes {
+  gap: var(--spacing-24, 24px);
+}
+.get-a-quote-message .bottom-boxes .or-call-now {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-12, 12px);
+}
+.get-a-quote-message .bottom-boxes .or-call-now .sub-text {
+  margin-bottom: 0px;
+}
+.get-a-quote-message .bottom-boxes .or-call-now h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-8, 8px);
+}
+
+.get-a-quote-thank-you {
+  text-align: center;
+  display: none;
+}
+.get-a-quote-thank-you > svg {
+  margin-bottom: 16px;
+}
+.get-a-quote-thank-you h2 {
+  color: var(--neutral-white, #fff);
+  margin-bottom: 16px;
+}
+.get-a-quote-thank-you .sub-text {
+  color: var(--neutral-white, #fff);
+  position: relative;
+  margin-bottom: 64px;
+}
+.get-a-quote-thank-you .message-box {
+  margin-bottom: 16px;
+}
+.get-a-quote-thank-you .bottom-boxes {
+  gap: var(--spacing-40, 40px);
+}
+.get-a-quote-thank-you .bottom-boxes .get-a-response {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-12, 12px);
+}
+.get-a-quote-thank-you .bottom-boxes .get-a-response .sub-text {
+  margin-bottom: 0px;
+}
+.get-a-quote-thank-you .bottom-boxes .get-a-response h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-8, 8px);
+}
+
 .quick-and-clean .wrapper {
   display: flex;
   padding: var(--padding-80, 80px) var(--padding-16, 16px);
@@ -715,9 +806,6 @@ input[type=radio]:checked + .form-dropdown-label {
   flex-direction: column;
   align-items: center;
   gap: var(--spacing-16, 16px);
-}
-.quick-and-clean .quick-top h2 {
-  color: var(--color-primary, #005299);
 }
 .quick-and-clean .quick-holder {
   display: flex;
@@ -755,7 +843,6 @@ input[type=radio]:checked + .form-dropdown-label {
   gap: var(--spacing-32, 32px);
 }
 .top-rated h2 {
-  color: var(--color-primary, #005299);
   padding-top: 52px;
 }
 
@@ -811,9 +898,6 @@ input[type=radio]:checked + .form-dropdown-label {
   align-items: center;
   gap: var(--spacing-16, 16px);
 }
-.how-top h2 {
-  color: var(--color-primary, #005299);
-}
 
 .how-it-works-boxes {
   display: flex;
@@ -868,9 +952,6 @@ input[type=radio]:checked + .form-dropdown-label {
   align-items: center;
   gap: var(--spacing-16, 16px);
 }
-.handle-top h2 {
-  color: var(--color-primary, #005299);
-}
 
 .we-handle-boxes {
   display: flex;
@@ -899,15 +980,15 @@ input[type=radio]:checked + .form-dropdown-label {
   flex-direction: column;
   gap: var(--spacing-32, 32px);
 }
+.our-service-area .image {
+  text-align: center;
+}
 
 .service-area-top {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: var(--spacing-16, 16px);
-}
-.service-area-top h2 {
-  color: var(--color-primary, #005299);
 }
 
 .area-boxes {
@@ -964,9 +1045,6 @@ input[type=radio]:checked + .form-dropdown-label {
   flex-direction: column;
   align-items: center;
   gap: var(--spacing-16, 16px);
-}
-.faq .wrapper .faq-top h2 {
-  color: var(--color-primary, #005299);
 }
 
 .questions {
@@ -1060,85 +1138,15 @@ input[type=radio]:checked + .form-dropdown-label {
   color: var(--neutral-grey-dark, rgba(17, 17, 17, 0.64));
 }
 
-.get-a-quote-message .wrapper {
-  padding: var(--padding-32, 32px) var(--padding-16, 16px);
-}
-.get-a-quote-message .wrapper > svg {
-  margin-bottom: 16px;
-}
-.get-a-quote-message .wrapper h2 {
-  color: var(--neutral-white, #fff);
-  margin-bottom: 24px;
-}
-.get-a-quote-message .wrapper .sub-text {
-  color: var(--neutral-white, #fff);
-  position: relative;
-  margin-bottom: 16px;
-}
-.get-a-quote-message .message-box {
-  margin-bottom: 16px;
-}
-.get-a-quote-message .bottom-boxes {
-  gap: var(--spacing-24, 24px);
-}
-.get-a-quote-message .bottom-boxes .or-call-now {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: var(--spacing-12, 12px);
-}
-.get-a-quote-message .bottom-boxes .or-call-now .sub-text {
-  margin-bottom: 0px;
-}
-.get-a-quote-message .bottom-boxes .or-call-now h2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: var(--spacing-8, 8px);
+.quote-form {
+  display: none;
 }
 
-.get-a-quote-thank-you .wrapper {
-  padding: var(--padding-32, 32px) var(--padding-16, 16px);
-}
-.get-a-quote-thank-you .wrapper > svg {
-  margin-bottom: 16px;
-}
-.get-a-quote-thank-you .wrapper h2 {
-  color: var(--neutral-white, #fff);
-  margin-bottom: 16px;
-}
-.get-a-quote-thank-you .wrapper .sub-text {
-  color: var(--neutral-white, #fff);
-  position: relative;
-  margin-bottom: 64px;
-}
-.get-a-quote-thank-you .message-box {
-  margin-bottom: 16px;
-}
-.get-a-quote-thank-you .bottom-boxes {
-  gap: var(--spacing-40, 40px);
-}
-.get-a-quote-thank-you .bottom-boxes .get-a-response {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: var(--spacing-12, 12px);
-}
-.get-a-quote-thank-you .bottom-boxes .get-a-response .sub-text {
-  margin-bottom: 0px;
-}
-.get-a-quote-thank-you .bottom-boxes .get-a-response h2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: var(--spacing-8, 8px);
-}
-
-.quote-form .blur {
+.blur {
   background: var(--neutral-grey-dark, rgba(17, 17, 17, 0.64));
   position: fixed;
   inset: 0;
-  z-index: 2;
+  z-index: 1;
 }
 
 .form-holder {
@@ -1158,13 +1166,16 @@ input[type=radio]:checked + .form-dropdown-label {
   border-radius: var(--border-8, 8px);
 }
 .form-holder h3 {
+  width: 100%;
   text-align: center;
   text-transform: capitalize;
 }
-.form-holder .close-form {
+
+.close-form {
   position: absolute;
   top: 6px;
   right: 6px;
+  cursor: pointer;
 }
 
 .quote-form-top {
@@ -1184,4 +1195,27 @@ input[type=radio]:checked + .form-dropdown-label {
   gap: 8px;
   color: var(--neutral-white, #fff);
   font-weight: 500;
+}
+
+.quote-form--completed {
+  position: fixed;
+  z-index: 4;
+  top: 10vh;
+  left: 8px;
+  right: 8px;
+  border-radius: var(--radius-8, 8px);
+  background: var(--neutral-white, #fff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 358px;
+  margin: auto;
+  padding: var(--padding-32, 32px) var(--padding-16, 16px);
+  flex-direction: column;
+  gap: var(--24px, 24px);
+  text-align: center;
+}
+
+.hide-form {
+  display: none;
 }/*# sourceMappingURL=main.css.map */
