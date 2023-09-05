@@ -16,3 +16,18 @@
     }
   }
 }
+@media (max-width: 320px) {
+  .bottom-boxes {
+    .small-text-box {
+      gap: unset;
+      justify-content: space-between;
+      width: 100%;
+      div {
+        gap: 2px;
+      }
+      .text-small {
+        font-size: 11px;
+      }
+    }
+  }
+}

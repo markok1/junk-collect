@@ -10,16 +10,9 @@
     h2 {
       padding-top: 32px;
     }
-    .bottom-boxes {
-      .small-text-box {
-        width: 100%;
-        gap: unset;
-        justify-content: space-between;
-        .text-small {
-          font-size: 13px;
-        }
-      }
-    }
+  }
+  .text-small {
+    font-size: 13px;
   }
 }
 .testimonial-holder {

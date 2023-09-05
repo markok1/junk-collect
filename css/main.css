@@ -299,6 +299,19 @@ h3 {
   gap: var(--spacing-4, 4px);
 }
 
+@media (max-width: 320px) {
+  .bottom-boxes .small-text-box {
+    gap: unset;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .bottom-boxes .small-text-box div {
+    gap: 2px;
+  }
+  .bottom-boxes .small-text-box .text-small {
+    font-size: 11px;
+  }
+}
 .form-dropdown-label {
   display: inline-flex;
   align-items: center;
@@ -616,12 +629,7 @@ input[type=radio]:checked + .form-dropdown-label {
 .testimonials .wrapper h2 {
   padding-top: 32px;
 }
-.testimonials .wrapper .bottom-boxes .small-text-box {
-  width: 100%;
-  gap: unset;
-  justify-content: space-between;
-}
-.testimonials .wrapper .bottom-boxes .small-text-box .text-small {
+.testimonials .text-small {
   font-size: 13px;
 }
 
