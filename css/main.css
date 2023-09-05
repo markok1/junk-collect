@@ -676,11 +676,14 @@ input[type=radio]:checked + .form-dropdown-label {
 
 .get-a-quote {
   position: relative;
+  overflow: hidden;
+}
+.get-a-quote .background-image {
+  overflow: hidden;
 }
 .get-a-quote .background-image img {
   position: absolute;
-  top: 0;
-  left: 0;
+  inset: 0;
   z-index: 0;
   width: 100%;
   height: 100%;
