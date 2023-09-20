@@ -1,6 +1,5 @@
 .get-a-quote-message {
   text-align: center;
-  display: none;
   > svg {
     margin-bottom: 16px;
   }
@@ -33,6 +32,13 @@
         align-items: center;
         gap: var(--spacing-8, 8px);
       }
+    }
+  }
+  form {
+    margin-bottom: 24px;
+    .primary-button {
+      cursor: pointer;
+      margin: auto;
     }
   }
 }

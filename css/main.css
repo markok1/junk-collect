@@ -132,6 +132,32 @@ ul {
   list-style-type: none;
 }
 
+textarea {
+  outline: 0px;
+}
+
+button {
+  cursor: pointer;
+}
+
+.hidden-fade {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+
+.show-fade {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+@media (prefers-reduced-motion) {
+  .hidden-fade {
+    transition: none;
+  }
+}
 h1 {
   color: var(--color-primary, #005299);
   text-align: center;
@@ -184,7 +210,7 @@ h3 {
 .sub-text {
   text-align: center;
   font-family: "Roboto", sans-serif;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 500;
   line-height: 30px;
 }
@@ -195,7 +221,7 @@ h3 {
   font-family: "Graphik", sans-serif;
   font-size: 14px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 24px;
   text-transform: uppercase;
 }
@@ -212,7 +238,7 @@ h3 {
   background: var(--color-accent, #dd1515);
   color: var(--neutral-white, #fff);
   font-family: "Roboto", sans-serif;
-  font-size: 20px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 500;
   line-height: 30px;
@@ -521,7 +547,7 @@ input[type=radio]:checked + .form-dropdown-label {
 }
 .hero .image .google-reviews-box {
   position: absolute;
-  top: 20px;
+  top: 17px;
   cursor: pointer;
   display: flex;
   padding: 3px 12px;
@@ -540,10 +566,10 @@ input[type=radio]:checked + .form-dropdown-label {
 .hero .image .hero-badges {
   display: flex;
   justify-content: center;
-  gap: 12px;
+  gap: 20px;
   width: 100%;
   position: absolute;
-  bottom: 20px;
+  bottom: 10px;
 }
 .hero .image .hero-badges .badge {
   flex-shrink: 0;
@@ -601,6 +627,7 @@ input[type=radio]:checked + .form-dropdown-label {
   display: flex;
   flex-direction: column;
   gap: var(--spacing-28, 28px);
+  margin-bottom: 20px;
 }
 .why-us-cards img {
   border-radius: var(--border-4, 4px);
@@ -627,7 +654,7 @@ input[type=radio]:checked + .form-dropdown-label {
   gap: var(--spacing-32, 32px);
 }
 .testimonials .wrapper h2 {
-  padding-top: 32px;
+  padding-top: 51px;
 }
 .testimonials .text-small {
   font-size: 13px;
@@ -647,6 +674,10 @@ input[type=radio]:checked + .form-dropdown-label {
   border-radius: var(--border-4, 4px);
   border: 1px solid var(--neutral-grey-light, rgba(17, 17, 17, 0.07));
   background: var(--neutral-white, #fff);
+}
+.testimonial .stars {
+  display: flex;
+  gap: 2px;
 }
 
 .testimonial-top {
@@ -710,6 +741,7 @@ input[type=radio]:checked + .form-dropdown-label {
 .get-a-quote .wrapper h2 {
   color: var(--neutral-white, #fff);
   margin-bottom: 16px;
+  padding-top: 18px;
 }
 .get-a-quote .wrapper .sub-text {
   color: var(--neutral-white, #fff);
@@ -717,9 +749,12 @@ input[type=radio]:checked + .form-dropdown-label {
   margin-bottom: 64px;
   z-index: 1;
 }
+.get-a-quote .wrapper .sub-text span {
+  display: block;
+}
 .get-a-quote .wrapper .arrow {
   position: absolute;
-  left: -6px;
+  left: 0px;
   bottom: -45px;
   z-index: -1;
 }
@@ -732,10 +767,16 @@ input[type=radio]:checked + .form-dropdown-label {
 .get-a-quote .text-small {
   font-size: 13px;
 }
+.get-a-quote .submit-lead-catcher-js {
+  margin-bottom: 16px;
+}
+.get-a-quote .submit-lead-catcher-js .primary-button {
+  margin: auto;
+  cursor: pointer;
+}
 
 .get-a-quote-message {
   text-align: center;
-  display: none;
 }
 .get-a-quote-message > svg {
   margin-bottom: 16px;
@@ -770,10 +811,16 @@ input[type=radio]:checked + .form-dropdown-label {
   align-items: center;
   gap: var(--spacing-8, 8px);
 }
+.get-a-quote-message form {
+  margin-bottom: 24px;
+}
+.get-a-quote-message form .primary-button {
+  cursor: pointer;
+  margin: auto;
+}
 
 .get-a-quote-thank-you {
   text-align: center;
-  display: none;
 }
 .get-a-quote-thank-you > svg {
   margin-bottom: 16px;
@@ -858,6 +905,7 @@ input[type=radio]:checked + .form-dropdown-label {
 }
 .top-rated h2 {
   padding-top: 52px;
+  margin-bottom: 20px;
 }
 
 .badge-list {
@@ -865,7 +913,8 @@ input[type=radio]:checked + .form-dropdown-label {
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
-  row-gap: var(--spacing-20, 20px);
+  row-gap: var(--spacing-40, 40px);
+  margin-bottom: 20px;
   opacity: 0.7;
 }
 .badge-list .badge {
@@ -902,7 +951,6 @@ input[type=radio]:checked + .form-dropdown-label {
 }
 .how-it-works .bottom-boxes .primary-button {
   padding: var(--padding-8, 8px) var(--padding-8, 8px);
-  font-size: 17px;
 }
 
 .how-top {
@@ -933,12 +981,12 @@ input[type=radio]:checked + .form-dropdown-label {
 }
 .how-it-works-boxes .how-box .left-arrow {
   position: absolute;
-  top: 5px;
-  left: 15px;
+  top: -43px;
+  left: 8px;
 }
 .how-it-works-boxes .how-box .right-arrow {
   position: absolute;
-  top: 5px;
+  top: -40px;
   right: 0px;
 }
 .how-it-works-boxes .how-box .how-content {
@@ -1126,12 +1174,14 @@ input[type=radio]:checked + .form-dropdown-label {
   align-items: flex-start;
   gap: var(--spacing-16, 16px);
 }
-.location-and-phone a {
+.location-and-phone a,
+.location-and-phone .adress {
   display: flex;
   gap: var(--spacing-8, 8px);
   color: var(--color-primary, #005299);
 }
-.location-and-phone a svg {
+.location-and-phone a svg,
+.location-and-phone .adress svg {
   flex-shrink: 0;
 }
 
@@ -1152,28 +1202,27 @@ input[type=radio]:checked + .form-dropdown-label {
   color: var(--neutral-grey-dark, rgba(17, 17, 17, 0.64));
 }
 
-.quote-form {
-  display: none;
-}
-
 .blur {
   background: var(--neutral-grey-dark, rgba(17, 17, 17, 0.64));
   position: fixed;
   inset: 0;
-  z-index: 1;
+  z-index: 3;
 }
 
 .form-holder {
+  overflow: auto;
   background: var(--neutral-white, #fff);
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   position: fixed;
-  top: 10vh;
+  top: 65px;
   left: 8px;
   right: 8px;
-  z-index: 3;
+  bottom: 65px;
+  z-index: 10;
   max-width: 358px;
+  max-height: 548px;
   margin: auto;
   padding: var(--padding-32, 32px) var(--padding-16, 16px);
   gap: var(--spacing-24, 24px);
@@ -1183,6 +1232,10 @@ input[type=radio]:checked + .form-dropdown-label {
   width: 100%;
   text-align: center;
   text-transform: capitalize;
+}
+.form-holder::-webkit-scrollbar {
+  width: 0;
+  height: 0;
 }
 
 .close-form {
@@ -1199,7 +1252,7 @@ input[type=radio]:checked + .form-dropdown-label {
   position: fixed;
   width: 100%;
   top: 0;
-  z-index: 2;
+  z-index: 4;
 }
 .quote-form-top a {
   display: flex;
@@ -1212,22 +1265,30 @@ input[type=radio]:checked + .form-dropdown-label {
 }
 
 .quote-form--completed {
+  overflow: auto;
   position: fixed;
   z-index: 4;
-  top: 10vh;
+  top: 65px;
   left: 8px;
   right: 8px;
+  bottom: 65px;
   border-radius: var(--radius-8, 8px);
   background: var(--neutral-white, #fff);
   display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 358px;
+  flex-direction: column;
+  max-width: 358px;
+  max-height: 548px;
   margin: auto;
   padding: var(--padding-32, 32px) var(--padding-16, 16px);
-  flex-direction: column;
   gap: var(--24px, 24px);
   text-align: center;
+}
+.quote-form--completed h3 {
+  margin-bottom: 78px;
+}
+.quote-form--completed::-webkit-scrollbar {
+  width: 0;
+  height: 0;
 }
 
 .hide-form {

@@ -7,7 +7,12 @@
       name="description"
       content="We Remove Your Junk, Transforming Clutter into Clear Spaces"
     />
+    <link rel="icon" href="img/logo.png" />
     <title>Junk Remover</title>
+    <!-- <base
+      href="https://voolt-template-asset.b-cdn.net/promo/cheapjunkremover/"
+    /> -->
+
     <link rel="stylesheet" href="css/main.css" />
     <script
       src="https://code.jquery.com/jquery-3.7.0.min.js"
@@ -18,9 +23,13 @@
   <body>
     <nav class="nav">
       <div class="wrapper">
-        <img src="img/logo.png" alt="Logo" />
+        <img class="hidden-fade" src="img/logo.png" alt="Logo" />
         <div class="nav-buttons">
-          <a id="header-call-now" class="phone" href="#">
+          <a
+            id="header-call-now"
+            class="phone hidden-fade"
+            href="tel:(760) 613-4285"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"
@@ -40,7 +49,7 @@
     </nav>
 
     <div class="sticky-bottom">
-      <a id="sticky-call-now" class="text" href="#">
+      <a id="sticky-call-now" class="text" href="tel:(760) 613-4285">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="21"
@@ -71,7 +80,7 @@
         </svg>
         Call Now
       </a>
-      <a id="sticky-book-now" class="text" href="#">
+      <a id="sticky-book-now" class="text open-form-js" href="#">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="21"
@@ -90,14 +99,14 @@
     <section class="hero">
       <div class="wrapper">
         <div class="image">
-          <div class="google-reviews-box">
+          <div class="google-reviews-box hidden-fade">
             <p>1,234 Reviews</p>
             <div class="devider"></div>
             <img src="img/google-logo.png" alt="Google logo" />
           </div>
-          <img src="img/hero-img.png" alt="Removing junk" />
+          <img src="img/hero-img.webp" alt="Removing junk" />
 
-          <div class="hero-badges">
+          <div class="hero-badges hidden-fade">
             <div class="badge">
               <img src="img/hero-locally-owned.svg" alt="Locally owned" />
             </div>
@@ -117,13 +126,15 @@
         </div>
         <div class="hero-content">
           <div>
-            <h1>We Remove Your Junk, Transforming Clutter into Clear Spaces</h1>
-            <p class="sub-text">
+            <h1 class="hidden-fade">
+              We Remove Your Junk, Transforming Clutter into Clear Spaces
+            </h1>
+            <p class="sub-text hidden-fade">
               From Overwhelming Clutter to Your Desired Clean Space!
             </p>
           </div>
           <div class="benefits-list">
-            <div class="benefit">
+            <div class="benefit hidden-fade">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -138,7 +149,7 @@
               </svg>
               <p class="text">Same day junk removal</p>
             </div>
-            <div class="benefit">
+            <div class="benefit hidden-fade">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -154,8 +165,8 @@
               <p class="text">We recycle and donate!</p>
             </div>
           </div>
-          <div class="bottom-boxes">
-            <a id="hero-book-now" class="primary-button" href="#"
+          <div class="bottom-boxes hidden-fade">
+            <a id="hero-book-now" class="primary-button open-form-js" href="#"
               >Get A Free Estimate</a
             >
             <div class="small-text-box">
@@ -167,13 +178,19 @@
         </div>
       </div>
     </section>
-    <div class="stroke"></div>
+    <div class="wrapper">
+      <div class="stroke"></div>
+    </div>
+
     <section class="why-choose-us">
       <div class="wrapper">
         <div class="why-top">
-          <p class="sub-title">READY TO MOVE ON WITH YOUR LIFE?</p>
-          <h2>We’ve got you covered. Leave the hard work to us!</h2>
+          <p class="sub-title hidden-fade">READY TO MOVE ON WITH YOUR LIFE?</p>
+          <h2 class="hidden-fade">
+            We’ve got you covered. Leave the hard work to us!
+          </h2>
           <svg
+            class="hidden-fade"
             xmlns="http://www.w3.org/2000/svg"
             width="227"
             height="20"
@@ -193,7 +210,7 @@
               fill="#DD1515"
             />
           </svg>
-          <p class="sub-text">
+          <p class="sub-text hidden-fade">
             We prioritize eco-friendly methods, ensuring the junk we collect is
             recycled or donated for a sustainable, positive outcome.
           </p>
@@ -201,7 +218,7 @@
 
         <div class="why-us-cards">
           <div class="stroke"></div>
-          <div class="why-us-card">
+          <div class="why-us-card hidden-fade">
             <img loading="lazy" src="img/whyus1.webp" alt="Recycle" />
             <div class="card-content">
               <h3>Recycle & Donate Items</h3>
@@ -212,7 +229,7 @@
             </div>
           </div>
           <div class="stroke"></div>
-          <div class="why-us-card">
+          <div class="why-us-card hidden-fade">
             <img loading="lazy" src="img/whyus2.webp" alt="Remove junk" />
             <div class="card-content">
               <h3>Remove Junk Today</h3>
@@ -223,7 +240,7 @@
             </div>
           </div>
           <div class="stroke"></div>
-          <div class="why-us-card">
+          <div class="why-us-card hidden-fade">
             <img loading="lazy" src="img/whyus3.webp" alt="Recycle" />
             <div class="card-content">
               <h3>Don't Break A Sweat</h3>
@@ -235,8 +252,8 @@
           </div>
           <div class="stroke"></div>
         </div>
-        <div class="bottom-boxes">
-          <a id="benefits-book-now" class="primary-button" href="#"
+        <div class="bottom-boxes hidden-fade">
+          <a id="benefits-book-now" class="primary-button open-form-js" href="#"
             >Get A Free Estimate</a
           >
           <div class="small-text-box">
@@ -286,9 +303,9 @@
         <path d="M187.5 50L-7.5 0L382.5 0L187.5 50Z" fill="white" />
       </svg>
       <div class="wrapper">
-        <h2>Junk Removal Customer Reviews</h2>
+        <h2 class="hidden-fade">Junk Removal Customer Reviews</h2>
         <div class="testimonial-holder">
-          <div class="testimonial">
+          <div class="testimonial hidden-fade">
             <div class="testimonial-top">
               <div class="image">
                 <img
@@ -433,7 +450,7 @@
               </p>
             </div>
           </div>
-          <div class="testimonial">
+          <div class="testimonial hidden-fade">
             <div class="testimonial-top">
               <div class="image">
                 <img
@@ -578,7 +595,7 @@
               </p>
             </div>
           </div>
-          <div class="testimonial">
+          <div class="testimonial hidden-fade">
             <div class="testimonial-top">
               <div class="image">
                 <img
@@ -724,8 +741,11 @@
             </div>
           </div>
         </div>
-        <div class="bottom-boxes">
-          <a id="testimonial-book-now" class="primary-button" href="#"
+        <div class="bottom-boxes hidden-fade">
+          <a
+            id="testimonial-book-now"
+            class="primary-button open-form-js"
+            href="#"
             >Get A Free Estimate</a
           >
           <div class="small-text-box">
@@ -769,12 +789,15 @@
       </div>
       <div class="wrapper">
         <div class="get-a-quote-email">
-          <h2>Transform Your Space! Claim a 20% Discount</h2>
-          <p class="sub-text">
+          <h2 class="hidden-fade">
+            Transform Your Space! Claim a 20% Discount
+          </h2>
+          <p class="sub-text hidden-fade">
             Enter your email and we will reach out to you with a discounted rate
-            for a first-time customer.
+            for a
+            <span>first-time customer.</span>
             <svg
-              class="arrow"
+              class="arrow hidden-fade"
               xmlns="http://www.w3.org/2000/svg"
               width="73"
               height="86"
@@ -795,27 +818,35 @@
               />
             </svg>
           </p>
+          <form class="submit-lead-catcher-js hidden-fade">
+            <input
+              type="hidden"
+              name="hash"
+              value="7df1afd8-3a4f-40ea-be77-c322d55216ca"
+            />
+            <input type="hidden" name="service" value="general-junk-removal" />
+            <div class="email-box">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="25"
+                height="24"
+                viewBox="0 0 25 24"
+                fill="none"
+              >
+                <path
+                  d="M20.5 4H4.5C3.396 4 2.5 4.896 2.5 6V18C2.5 19.104 3.396 20 4.5 20H20.5C21.604 20 22.5 19.104 22.5 18V6C22.5 4.896 21.604 4 20.5 4ZM20.5 8.7L12.5 14.034L4.5 8.7V6.297L12.5 11.63L20.5 6.297V8.7Z"
+                  fill="#111111"
+                  fill-opacity="0.64"
+                />
+              </svg>
+              <input placeholder="Email Adress" name="email" type="email" />
+            </div>
+            <button id="email_catcher_form_submit" class="primary-button">
+              Submit
+            </button>
+          </form>
 
-          <div class="email-box">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="25"
-              height="24"
-              viewBox="0 0 25 24"
-              fill="none"
-            >
-              <path
-                d="M20.5 4H4.5C3.396 4 2.5 4.896 2.5 6V18C2.5 19.104 3.396 20 4.5 20H20.5C21.604 20 22.5 19.104 22.5 18V6C22.5 4.896 21.604 4 20.5 4ZM20.5 8.7L12.5 14.034L4.5 8.7V6.297L12.5 11.63L20.5 6.297V8.7Z"
-                fill="#111111"
-                fill-opacity="0.64"
-              />
-            </svg>
-            <input placeholder="Email Adress" type="email" />
-          </div>
-          <div class="bottom-boxes">
-            <a id="email_catcher_form_submit" class="primary-button" href="#"
-              >Submit</a
-            >
+          <div class="bottom-boxes hidden-fade">
             <div class="small-text-box">
               <div>
                 <svg
@@ -850,7 +881,7 @@
             </div>
           </div>
         </div>
-        <div class="get-a-quote-message">
+        <div class="get-a-quote-message hide-form">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="61"
@@ -866,37 +897,49 @@
           </svg>
           <h2>Transform Your Space! Claim a 20% Discount</h2>
           <p class="sub-text">Tell us more about what you need:</p>
+          <form class="submit-comment-catcher-js">
+            <input
+              type="hidden"
+              name="hash"
+              value="7df1afd8-3a4f-40ea-be77-c322d55216ca"
+            />
+            <input type="hidden" name="service" value="general-junk-removal" />
+            <div class="message-box">
+              <textarea
+                class="text"
+                name="comments"
+                placeholder="Message"
+              ></textarea>
+            </div>
+            <button id="submit-comment-catcher-js" class="primary-button">
+              Submit
+            </button>
+          </form>
 
-          <div class="message-box">
-            <textarea
-              class="text"
-              name="message"
-              placeholder="Message"
-            ></textarea>
-          </div>
           <div class="bottom-boxes">
-            <a class="primary-button" href="#">Submit</a>
             <div class="or-call-now">
               <p class="sub-text">Or Call Now</p>
-              <h2>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="32"
-                  height="32"
-                  viewBox="0 0 32 32"
-                  fill="none"
-                >
-                  <path
-                    d="M27.3159 21.8533L21.8959 16.9253C21.3639 16.4413 20.5426 16.4666 20.0412 16.9826L16.8506 20.2639C16.0826 20.1173 14.5386 19.6359 12.9492 18.0506C11.3599 16.4599 10.8786 14.9119 10.7359 14.1493L14.0146 10.9573C14.5319 10.4559 14.5559 9.63592 14.0719 9.10258L9.14522 3.68392C8.66122 3.14925 7.83855 3.09858 7.29055 3.56792L4.39722 6.04925C4.16655 6.28125 4.02922 6.58792 4.01055 6.91458C3.99055 7.24792 3.60922 15.1439 9.73189 21.2693C15.0732 26.6093 21.7639 26.9999 23.6066 26.9999C23.8759 26.9999 24.0412 26.9919 24.0852 26.9893C24.4119 26.9706 24.7186 26.8333 24.9492 26.6012L27.4292 23.7066C27.9012 23.1586 27.8492 22.3372 27.3159 21.8533Z"
-                    fill="#DD1515"
-                  />
-                </svg>
-                123-556-0786
-              </h2>
+              <a href="tel:(760) 613-4285">
+                <h2>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    viewBox="0 0 32 32"
+                    fill="none"
+                  >
+                    <path
+                      d="M27.3159 21.8533L21.8959 16.9253C21.3639 16.4413 20.5426 16.4666 20.0412 16.9826L16.8506 20.2639C16.0826 20.1173 14.5386 19.6359 12.9492 18.0506C11.3599 16.4599 10.8786 14.9119 10.7359 14.1493L14.0146 10.9573C14.5319 10.4559 14.5559 9.63592 14.0719 9.10258L9.14522 3.68392C8.66122 3.14925 7.83855 3.09858 7.29055 3.56792L4.39722 6.04925C4.16655 6.28125 4.02922 6.58792 4.01055 6.91458C3.99055 7.24792 3.60922 15.1439 9.73189 21.2693C15.0732 26.6093 21.7639 26.9999 23.6066 26.9999C23.8759 26.9999 24.0412 26.9919 24.0852 26.9893C24.4119 26.9706 24.7186 26.8333 24.9492 26.6012L27.4292 23.7066C27.9012 23.1586 27.8492 22.3372 27.3159 21.8533Z"
+                      fill="#DD1515"
+                    />
+                  </svg>
+                  (760) 613-4285
+                </h2>
+              </a>
             </div>
           </div>
         </div>
-        <div class="get-a-quote-thank-you">
+        <div class="get-a-quote-thank-you hide-form">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="61"
@@ -919,21 +962,23 @@
           <div class="bottom-boxes">
             <div class="get-a-response">
               <p class="sub-text">Get A Response Now</p>
-              <h2>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="32"
-                  height="32"
-                  viewBox="0 0 32 32"
-                  fill="none"
-                >
-                  <path
-                    d="M27.3159 21.8533L21.8959 16.9253C21.3639 16.4413 20.5426 16.4666 20.0412 16.9826L16.8506 20.2639C16.0826 20.1173 14.5386 19.6359 12.9492 18.0506C11.3599 16.4599 10.8786 14.9119 10.7359 14.1493L14.0146 10.9573C14.5319 10.4559 14.5559 9.63592 14.0719 9.10258L9.14522 3.68392C8.66122 3.14925 7.83855 3.09858 7.29055 3.56792L4.39722 6.04925C4.16655 6.28125 4.02922 6.58792 4.01055 6.91458C3.99055 7.24792 3.60922 15.1439 9.73189 21.2693C15.0732 26.6093 21.7639 26.9999 23.6066 26.9999C23.8759 26.9999 24.0412 26.9919 24.0852 26.9893C24.4119 26.9706 24.7186 26.8333 24.9492 26.6012L27.4292 23.7066C27.9012 23.1586 27.8492 22.3372 27.3159 21.8533Z"
-                    fill="#DD1515"
-                  />
-                </svg>
-                123-556-0786
-              </h2>
+              <a href="tel:(760) 613-4285">
+                <h2>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    viewBox="0 0 32 32"
+                    fill="none"
+                  >
+                    <path
+                      d="M27.3159 21.8533L21.8959 16.9253C21.3639 16.4413 20.5426 16.4666 20.0412 16.9826L16.8506 20.2639C16.0826 20.1173 14.5386 19.6359 12.9492 18.0506C11.3599 16.4599 10.8786 14.9119 10.7359 14.1493L14.0146 10.9573C14.5319 10.4559 14.5559 9.63592 14.0719 9.10258L9.14522 3.68392C8.66122 3.14925 7.83855 3.09858 7.29055 3.56792L4.39722 6.04925C4.16655 6.28125 4.02922 6.58792 4.01055 6.91458C3.99055 7.24792 3.60922 15.1439 9.73189 21.2693C15.0732 26.6093 21.7639 26.9999 23.6066 26.9999C23.8759 26.9999 24.0412 26.9919 24.0852 26.9893C24.4119 26.9706 24.7186 26.8333 24.9492 26.6012L27.4292 23.7066C27.9012 23.1586 27.8492 22.3372 27.3159 21.8533Z"
+                      fill="#DD1515"
+                    />
+                  </svg>
+                  (760) 613-4285
+                </h2>
+              </a>
             </div>
             <div class="small-text-box">
               <div>
@@ -957,10 +1002,10 @@
       </div>
     </section>
 
-    <section class="quote-form">
-      <div class="blur"></div>
+    <section class="quote-form hide-form">
+      <div class="blur close-form-js"></div>
       <div class="quote-form-top">
-        <a class="text-small" href="#">
+        <a class="text-small" href="tel:(760) 613-4285">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="20"
@@ -973,13 +1018,13 @@
               fill="#50ABF9"
             />
           </svg>
-          (304)-707-4018
+          (760) 613-4285
         </a>
       </div>
       <div class="form-holder">
         <h3>Get Your Free Estimate</h3>
         <svg
-          class="close-form"
+          class="close-form close-form-js"
           xmlns="http://www.w3.org/2000/svg"
           width="32"
           height="32"
@@ -995,67 +1040,37 @@
             stroke-linejoin="round"
           />
         </svg>
-        <form class="quote-form-inputs" action="">
-          <input class="text" placeholder="Full Name" type="text" />
-          <input class="text" placeholder="Email adress" type="email" />
-          <input class="text" placeholder="Phone Number" type="number" />
-          <div class="form-dropdown-container">
-            <div class="form-dropdown-label" for="form-1">
-              <span class="option-text text">Contact Method</span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-              >
-                <path
-                  d="M6 9L12 15L18 9"
-                  stroke="#111111"
-                  stroke-opacity="0.64"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </div>
-
-            <div class="dropdown-list-custom">
-              <ul>
-                <li>
-                  <div class="dropdown-list-item dropdown-list-item--active">
-                    <p class="text">Option 1</p>
-                  </div>
-                </li>
-                <li>
-                  <div class="dropdown-list-item">
-                    <p class="text">Option 2</p>
-                  </div>
-                </li>
-                <li>
-                  <div class="dropdown-list-item">
-                    <p class="text">Option 3</p>
-                  </div>
-                </li>
-                <li>
-                  <div class="dropdown-list-item">
-                    <p class="text">Option 4</p>
-                  </div>
-                </li>
-                <li>
-                  <div class="dropdown-list-item">
-                    <p class="text">Option 5</p>
-                  </div>
-                </li>
-                <li>
-                  <div class="dropdown-list-item">
-                    <p class="text">Option 6</p>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <textarea class="text" placeholder="Message"></textarea>
+        <form class="quote-form-inputs form-js">
+          <input
+            type="hidden"
+            name="hash"
+            value="7df1afd8-3a4f-40ea-be77-c322d55216ca"
+          />
+          <input type="hidden" name="service" value="general-junk-removal" />
+          <input
+            class="text"
+            placeholder="Full Name"
+            name="fullName"
+            type="text"
+          />
+          <input
+            class="text"
+            placeholder="Email adress"
+            name="email"
+            type="email"
+          />
+          <input
+            class="text phone-js"
+            placeholder="Phone Number"
+            name="phone"
+            id="phone"
+            type="tel"
+          />
+          <textarea
+            class="text"
+            name="comments"
+            placeholder="Message"
+          ></textarea>
           <button id="submit-lead-button" class="primary-button">Submit</button>
         </form>
       </div>
@@ -1063,7 +1078,7 @@
       <!-- Thank you message after succesful form -->
       <div class="quote-form--completed hide-form">
         <svg
-          class="close-form"
+          class="close-form close-form-js"
           xmlns="http://www.w3.org/2000/svg"
           width="32"
           height="32"
@@ -1080,7 +1095,53 @@
           />
         </svg>
         <h3>Get Your Free Estimate</h3>
-        <img src="img/thank-you.png" alt="Checkmark" />
+        <div class="image">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="100"
+            height="100"
+            viewBox="0 0 100 100"
+            fill="none"
+          >
+            <path
+              d="M76.1583 11.1028C56.95 11.4611 43.5694 1.75556 34.3139 1.93056C25.0583 2.10556 5.71387 7.79167 6.51109 50.375C7.30831 92.9583 33.5778 98.7194 43.7611 98.5306C91.4361 97.6389 110.181 10.4667 76.1583 11.1028Z"
+              fill="#EDF7FE"
+            />
+            <path
+              d="M47.2222 81.25C62.947 81.25 75.6944 68.5025 75.6944 52.7778C75.6944 37.053 62.947 24.3055 47.2222 24.3055C31.4974 24.3055 18.75 37.053 18.75 52.7778C18.75 68.5025 31.4974 81.25 47.2222 81.25Z"
+              fill="#DD1515"
+            />
+            <path
+              d="M24.4444 52.7778C24.4444 38.0139 35.6833 25.8778 50.0694 24.45C49.1333 24.3555 48.1833 24.3055 47.2222 24.3055C31.4972 24.3055 18.75 37.0528 18.75 52.7778C18.75 68.5028 31.4972 81.25 47.2222 81.25C48.1833 81.25 49.1333 81.2 50.0694 81.1055C35.6833 79.6778 24.4444 67.5417 24.4444 52.7778Z"
+              fill="#EDF7FE"
+            />
+            <path
+              d="M81.9485 81.49L79.9846 83.4545L83.9136 87.3822L85.8775 85.4177L81.9485 81.49Z"
+              fill="#DD1515"
+            />
+            <path
+              d="M84.4051 70.1906L80.4768 74.119L82.441 76.0832L86.3693 72.1547L84.4051 70.1906Z"
+              fill="#DD1515"
+            />
+            <path
+              d="M73.1126 81.4871L69.1843 85.4155L71.1485 87.3797L75.0768 83.4512L73.1126 81.4871Z"
+              fill="#DD1515"
+            />
+            <path
+              d="M75 19.4917C72.7028 19.4917 70.8334 17.6222 70.8334 15.325C70.8334 13.0278 72.7028 11.1583 75 11.1583C77.2973 11.1583 79.1667 13.0278 79.1667 15.325C79.1667 17.6222 77.2973 19.4917 75 19.4917ZM75 13.9361C74.2334 13.9361 73.6112 14.5611 73.6112 15.325C73.6112 16.0889 74.2334 16.7139 75 16.7139C75.7667 16.7139 76.3889 16.0889 76.3889 15.325C76.3889 14.5611 75.7667 13.9361 75 13.9361Z"
+              fill="#DD1515"
+            />
+            <path
+              d="M47.2222 83.3333C30.375 83.3333 16.6666 69.6249 16.6666 52.7777C16.6666 35.9305 30.375 22.2222 47.2222 22.2222C53.0833 22.2222 58.7833 23.8944 63.7055 27.0527L61.4527 30.5583C57.2055 27.8333 52.2833 26.3888 47.2222 26.3888C32.6722 26.3888 20.8333 38.2277 20.8333 52.7777C20.8333 67.3277 32.6722 79.1666 47.2222 79.1666C61.7722 79.1666 73.6111 67.3277 73.6111 52.7777C73.6111 51.9083 73.5694 51.0472 73.4888 50.1999L77.6361 49.7972C77.7305 50.7805 77.7777 51.7722 77.7777 52.7777C77.7777 69.6249 64.0694 83.3333 47.2222 83.3333Z"
+              fill="#111111"
+            />
+            <path
+              d="M50.6944 59.7222C50.1611 59.7222 49.6277 59.5194 49.2222 59.1111L36.7222 46.6111L39.6694 43.6639L50.6972 54.6916L79.7777 25.6111L82.7249 28.5583L52.1694 59.1139C51.7611 59.5194 51.2277 59.7222 50.6944 59.7222Z"
+              fill="#111111"
+            />
+          </svg>
+        </div>
+
         <h2>Thank you!</h2>
         <p class="text">
           We will reach out to you shortly regarding your requested service.
@@ -1091,9 +1152,10 @@
     <section class="quick-and-clean">
       <div class="wrapper">
         <div class="quick-top">
-          <div class="sub-title">Quick and clean removal</div>
-          <h2>Junk Removal Made Easy, Stress Relieved.</h2>
+          <div class="sub-title hidden-fade">Quick and clean removal</div>
+          <h2 class="hidden-fade">Junk Removal Made Easy, Stress Relieved.</h2>
           <svg
+            class="hidden-fade"
             xmlns="http://www.w3.org/2000/svg"
             width="231"
             height="24"
@@ -1115,27 +1177,27 @@
           </svg>
         </div>
         <div class="quick-holder">
-          <div class="quick-box">
-            <img loading="lazy" src="img/clock.png" alt="Clock" />
+          <div class="quick-box hidden-fade">
+            <img loading="lazy" src="img/time.svg" alt="Time" />
             <p class="text">
               We’ll be in and out in no time so you can get on with your day.
             </p>
           </div>
-          <div class="quick-box">
-            <img loading="lazy" src="img/chat.png" alt="Chat" />
+          <div class="quick-box hidden-fade">
+            <img loading="lazy" src="img/dollar.svg" alt="Dollar" />
             <p class="text">
               Free onsite estimates with all-inclusive pricing. No hidden fees.
               Zero pressure.
             </p>
           </div>
-          <div class="quick-box">
-            <img loading="lazy" src="img/calendar.png" alt="Calendar" />
+          <div class="quick-box hidden-fade">
+            <img loading="lazy" src="img/clock.svg" alt="Clock" />
             <p class="text">
               Your time matters. Count on us to be prompt and ready.
             </p>
           </div>
         </div>
-        <div class="image">
+        <div class="image hidden-fade">
           <img
             loading="lazy"
             src="img/made-easy.png"
@@ -1156,30 +1218,30 @@
         <path d="M187.5 50L-7.5 0L382.5 0L187.5 50Z" fill="white" />
       </svg>
       <div class="wrapper">
-        <h2>Top-rated junk removal Experts</h2>
+        <h2 class="hidden-fade">Top-rated junk removal Experts</h2>
         <div class="badge-list">
-          <div class="badge">
+          <div class="badge hidden-fade">
             <img
               loading="lazy"
               src="img/badge-locally-owned.svg"
               alt="Locally owned"
             />
           </div>
-          <div class="badge">
+          <div class="badge hidden-fade">
             <img
               loading="lazy"
               src="img/badge-awarded-best-service.svg"
               alt="Awarded best service provider"
             />
           </div>
-          <div class="badge">
+          <div class="badge hidden-fade">
             <img
               loading="lazy"
               src="img/badge-customer-satisfaction.svg"
               alt="Customer Satiscaftion 100%"
             />
           </div>
-          <div class="badge">
+          <div class="badge hidden-fade">
             <img
               loading="lazy"
               src="img/badge-premium-quality.svg"
@@ -1187,7 +1249,7 @@
             />
           </div>
         </div>
-        <div class="stars-and-reviews">
+        <div class="stars-and-reviews hidden-fade">
           <div class="stars-holder">
             <div class="stars">
               <svg
@@ -1319,8 +1381,8 @@
           <div class="devider"></div>
           <p class="text-small">1,234 Reviews</p>
         </div>
-        <div class="bottom-boxes">
-          <a id="badges-book-now" class="primary-button" href="#"
+        <div class="bottom-boxes hidden-fade">
+          <a id="badges-book-now" class="primary-button open-form-js" href="#"
             >Get A Free Estimate</a
           >
           <div class="small-text-box">
@@ -1361,8 +1423,9 @@
     <section class="how-it-works">
       <div class="wrapper">
         <div class="how-top">
-          <h2>How it Works</h2>
+          <h2 class="hidden-fade">How it Works</h2>
           <svg
+            class="hidden-fade"
             xmlns="http://www.w3.org/2000/svg"
             width="231"
             height="24"
@@ -1382,19 +1445,19 @@
               fill="#DD1515"
             />
           </svg>
-          <p class="sub-text">Remove your junk in 3 easy steps</p>
+          <p class="sub-text hidden-fade">Remove your junk in 3 easy steps</p>
         </div>
 
         <div class="how-it-works-boxes">
-          <div class="how-box">
-            <img src="img/how1.png" alt="Recycle" />
+          <div class="how-box hidden-fade">
+            <img src="img/how1.svg" alt="Details" />
             <div class="how-content">
               <h3>Send Your Details</h3>
               <p class="text">Submit a form online or simply give us a call.</p>
             </div>
           </div>
-          <div class="how-box">
-            <img src="img/how2.png" alt="Schedule" />
+          <div class="how-box hidden-fade">
+            <img src="img/how2.svg" alt="Schedule" />
             <svg
               class="left-arrow"
               xmlns="http://www.w3.org/2000/svg"
@@ -1424,8 +1487,8 @@
               </p>
             </div>
           </div>
-          <div class="how-box">
-            <img src="img/how3.png" alt="Thumbs up" />
+          <div class="how-box hidden-fade">
+            <img src="img/how3.svg" alt="Thumbs up" />
             <svg
               class="right-arrow"
               xmlns="http://www.w3.org/2000/svg"
@@ -1453,8 +1516,8 @@
             </div>
           </div>
         </div>
-        <div class="bottom-boxes">
-          <a id="how-book-now" class="primary-button" href="#"
+        <div class="bottom-boxes hidden-fade">
+          <a id="how-book-now" class="primary-button open-form-js" href="#"
             >Schedule Now Your Free Estimate
           </a>
           <div class="small-text-box">
@@ -1492,13 +1555,16 @@
         </div>
       </div>
     </section>
-    <div class="stroke"></div>
+    <div class="wrapper">
+      <div class="stroke"></div>
+    </div>
     <section class="we-handle">
       <div class="wrapper">
         <div class="handle-top">
-          <div class="sub-title">What Do We Remove?</div>
-          <h2>We Handle A Wide Range Of Items</h2>
+          <div class="sub-title hidden-fade">What Do We Remove?</div>
+          <h2 class="hidden-fade">We Handle A Wide Range Of Items</h2>
           <svg
+            class="hidden-fade"
             xmlns="http://www.w3.org/2000/svg"
             width="231"
             height="24"
@@ -1520,7 +1586,7 @@
           </svg>
         </div>
         <div class="we-handle-boxes">
-          <div class="handle-box">
+          <div class="handle-box hidden-fade">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"
@@ -1535,7 +1601,7 @@
             </svg>
             <p class="text-small">Furniture</p>
           </div>
-          <div class="handle-box">
+          <div class="handle-box hidden-fade">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"
@@ -1550,7 +1616,7 @@
             </svg>
             <p class="text-small">Junk</p>
           </div>
-          <div class="handle-box">
+          <div class="handle-box hidden-fade">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"
@@ -1565,7 +1631,7 @@
             </svg>
             <p class="text-small">Appliances</p>
           </div>
-          <div class="handle-box">
+          <div class="handle-box hidden-fade">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"
@@ -1580,7 +1646,7 @@
             </svg>
             <p class="text-small">Pianos</p>
           </div>
-          <div class="handle-box">
+          <div class="handle-box hidden-fade">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"
@@ -1595,7 +1661,7 @@
             </svg>
             <p class="text-small">Hot Tubs</p>
           </div>
-          <div class="handle-box">
+          <div class="handle-box hidden-fade">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"
@@ -1610,7 +1676,7 @@
             </svg>
             <p class="text-small">Pallets</p>
           </div>
-          <div class="handle-box">
+          <div class="handle-box hidden-fade">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"
@@ -1625,7 +1691,7 @@
             </svg>
             <p class="text-small">Exercise Equipment</p>
           </div>
-          <div class="handle-box">
+          <div class="handle-box hidden-fade">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"
@@ -1640,7 +1706,7 @@
             </svg>
             <p class="text-small">Consturction Debris</p>
           </div>
-          <div class="handle-box">
+          <div class="handle-box hidden-fade">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"
@@ -1656,8 +1722,8 @@
             <p class="text-small">And More!</p>
           </div>
         </div>
-        <div class="bottom-boxes">
-          <a id="services-book-now" class="primary-button" href="#"
+        <div class="bottom-boxes hidden-fade">
+          <a id="services-book-now" class="primary-button open-form-js" href="#"
             >Get A Free Estimate</a
           >
         </div>
@@ -1666,18 +1732,18 @@
     <section class="our-service-area">
       <div class="wrapper">
         <div class="service-area-top">
-          <h2>Our Service Area</h2>
-          <p class="sub-text">
+          <h2 class="hidden-fade">Our Service Area</h2>
+          <p class="sub-text hidden-fade">
             From Oceanside to Chula Vista. Proudly Serving San Diego including:
           </p>
         </div>
 
         <div class="image">
-          <img src="img/area-map.png" alt="Map area" />
+          <img src="img/area-map.webp" alt="Map area" />
         </div>
 
         <div class="area-boxes">
-          <div class="area-box">
+          <div class="area-box hidden-fade">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"
@@ -1699,7 +1765,7 @@
             </svg>
             <p class="text-small">Oceanside</p>
           </div>
-          <div class="area-box">
+          <div class="area-box hidden-fade">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"
@@ -1721,7 +1787,7 @@
             </svg>
             <p class="text-small">Carlsbad</p>
           </div>
-          <div class="area-box">
+          <div class="area-box hidden-fade">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"
@@ -1743,7 +1809,7 @@
             </svg>
             <p class="text-small">Encinitas</p>
           </div>
-          <div class="area-box">
+          <div class="area-box hidden-fade">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"
@@ -1765,7 +1831,7 @@
             </svg>
             <p class="text-small">Vista</p>
           </div>
-          <div class="area-box">
+          <div class="area-box hidden-fade">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"
@@ -1787,7 +1853,7 @@
             </svg>
             <p class="text-small">San Maracos</p>
           </div>
-          <div class="area-box">
+          <div class="area-box hidden-fade">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"
@@ -1809,7 +1875,7 @@
             </svg>
             <p class="text-small">Solana Beach</p>
           </div>
-          <div class="area-box">
+          <div class="area-box hidden-fade">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"
@@ -1831,7 +1897,7 @@
             </svg>
             <p class="text-small">Fallbrook</p>
           </div>
-          <div class="area-box">
+          <div class="area-box hidden-fade">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"
@@ -1853,7 +1919,7 @@
             </svg>
             <p class="text-small">Escondido</p>
           </div>
-          <div class="area-box">
+          <div class="area-box hidden-fade">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"
@@ -1875,7 +1941,7 @@
             </svg>
             <p class="text-small">Poway</p>
           </div>
-          <div class="area-box">
+          <div class="area-box hidden-fade">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"
@@ -1897,7 +1963,7 @@
             </svg>
             <p class="text-small">San Clemente</p>
           </div>
-          <div class="area-box">
+          <div class="area-box hidden-fade">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"
@@ -1919,7 +1985,7 @@
             </svg>
             <p class="text-small">Murrieta</p>
           </div>
-          <div class="area-box">
+          <div class="area-box hidden-fade">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"
@@ -1941,7 +2007,7 @@
             </svg>
             <p class="text-small">Temecula</p>
           </div>
-          <div class="area-box">
+          <div class="area-box hidden-fade">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"
@@ -1963,7 +2029,7 @@
             </svg>
             <p class="text-small">Dana Point</p>
           </div>
-          <div class="area-box">
+          <div class="area-box hidden-fade">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"
@@ -1985,7 +2051,7 @@
             </svg>
             <p class="text-small">San Juan Capistrano</p>
           </div>
-          <div class="area-box">
+          <div class="area-box hidden-fade">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"
@@ -2007,7 +2073,7 @@
             </svg>
             <p class="text-small">Wildomar</p>
           </div>
-          <div class="area-box">
+          <div class="area-box hidden-fade">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"
@@ -2029,9 +2095,31 @@
             </svg>
             <p class="text-small">Laguna Niguel</p>
           </div>
+          <div class="area-box hidden-fade">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+              fill="none"
+            >
+              <g clip-path="url(#clip0_163_3559)">
+                <path
+                  d="M9.99999 1.66699C6.77499 1.66699 4.16666 4.27533 4.16666 7.50033C4.16666 11.8753 9.99999 18.3337 9.99999 18.3337C9.99999 18.3337 15.8333 11.8753 15.8333 7.50033C15.8333 4.27533 13.225 1.66699 9.99999 1.66699ZM9.99999 9.58366C8.84999 9.58366 7.91666 8.65033 7.91666 7.50033C7.91666 6.35033 8.84999 5.41699 9.99999 5.41699C11.15 5.41699 12.0833 6.35033 12.0833 7.50033C12.0833 8.65033 11.15 9.58366 9.99999 9.58366Z"
+                  fill="#DD1515"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_163_3559">
+                  <rect width="20" height="20" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+            <p class="text-small">And More!</p>
+          </div>
         </div>
-        <div class="bottom-boxes">
-          <a id="cities-book-now" class="primary-button" href="#"
+        <div class="bottom-boxes hidden-fade">
+          <a id="cities-book-now" class="primary-button open-form-js" href="#"
             >Get A Free Estimate</a
           >
           <div class="small-text-box">
@@ -2081,24 +2169,25 @@
         <path d="M187.5 50L-7.5 0L382.5 0L187.5 50Z" fill="white" />
       </svg>
       <div class="wrapper">
-        <h2>Meet The Owner</h2>
-        <img src="img/owner.png" alt="Owner" />
+        <h2 class="hidden-fade">Meet The Owner</h2>
+        <img class="hidden-fade" src="img/owner.webp" alt="Owner" />
         <div class="owner-text">
-          <p class="text">
+          <p class="text hidden-fade">
             Hello, I'm Isaac. Established in 2002, Cheap Junk Removal was born
             from my desire to make Junk Removal as straightforward as possible.
             I look forward to you experiencing our teams top-notch service and
             unmatched junk removal skills.
           </p>
-          <p class="text">Thank you for choosing us!</p>
+          <p class="text hidden-fade">Thank you for choosing us!</p>
         </div>
       </div>
     </section>
     <section class="faq">
       <div class="wrapper">
         <div class="faq-top">
-          <h2>Frequently Asked Questions</h2>
+          <h2 class="hidden-fade">Frequently Asked Questions</h2>
           <svg
+            class="hidden-fade"
             xmlns="http://www.w3.org/2000/svg"
             width="231"
             height="24"
@@ -2120,7 +2209,7 @@
           </svg>
         </div>
         <div class="questions">
-          <div class="qa-item">
+          <div class="qa-item hidden-fade">
             <div class="question">
               <p class="text">What services do you offer?</p>
               <svg
@@ -2145,7 +2234,7 @@
               </p>
             </div>
           </div>
-          <div class="qa-item">
+          <div class="qa-item hidden-fade">
             <div class="question">
               <p class="text">Do you provide any guarantees?</p>
               <svg
@@ -2170,7 +2259,7 @@
               </p>
             </div>
           </div>
-          <div class="qa-item">
+          <div class="qa-item hidden-fade">
             <div class="question">
               <p class="text">Who owns your business?</p>
               <svg
@@ -2192,7 +2281,7 @@
               <p class="text">We are locally owned and operated.</p>
             </div>
           </div>
-          <div class="qa-item">
+          <div class="qa-item hidden-fade">
             <div class="question">
               <p class="text">What is your service area?</p>
               <svg
@@ -2217,7 +2306,7 @@
               </p>
             </div>
           </div>
-          <div class="qa-item">
+          <div class="qa-item hidden-fade">
             <div class="question">
               <p class="text">How quickly can you provide your services?</p>
               <svg
@@ -2244,7 +2333,7 @@
               </p>
             </div>
           </div>
-          <div class="qa-item">
+          <div class="qa-item hidden-fade">
             <div class="question">
               <p class="text">What are your work hours?</p>
               <svg
@@ -2271,8 +2360,8 @@
             </div>
           </div>
         </div>
-        <div class="bottom-boxes">
-          <a id="faq-book-now" class="primary-button" href="#"
+        <div class="bottom-boxes hidden-fade">
+          <a id="faq-book-now" class="primary-button open-form-js" href="#"
             >Get A Free Estimate</a
           >
           <div class="small-text-box">
@@ -2312,19 +2401,19 @@
     </section>
     <footer class="footer">
       <div class="wrapper">
-        <div class="image">
-          <img loading="lazy" src="img/map.webp" alt="Location" />
+        <div class="image hidden-fade">
+          <img loading="lazy" src="img/area-map.webp" alt="Location" />
         </div>
-        <div class="image">
+        <div class="image hidden-fade">
           <img loading="lazy" src="img/logo.png" alt="Logo" />
         </div>
         <div class="location-and-phone">
-          <p class="text-small">
+          <p class="text-small hidden-fade">
             Let us handle your junk removal needs. Professional, affordable, and
             hassle-free service. Contact us today for a clean and clutter-free
             space.
           </p>
-          <a class="text-small" href="#">
+          <p class="text-small adress hidden-fade">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"
@@ -2346,8 +2435,8 @@
             </svg>
 
             4850 Concho Circle, Oceanside, California 92057, United States
-          </a>
-          <a class="text-small" href="#">
+          </p>
+          <a class="text-small hidden-fade" href="tel:(760) 613-4285">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"
@@ -2366,10 +2455,18 @@
         </div>
         <div class="stroke"></div>
 
-        <div class="privacy-terms">
+        <div class="privacy-terms hidden-fade">
           <div class="privacy-top">
-            <a class="text-small" href="#">Privacy Policy</a>
-            <a class="text-small" href="#">Terms of Use</a>
+            <a
+              class="text-small"
+              href="https://cheapjunkremover.voolt.com/privacy-policy"
+              >Privacy Policy</a
+            >
+            <a
+              class="text-small"
+              href="https://cheapjunkremover.voolt.com/terms-of-use"
+              >Terms of Use</a
+            >
           </div>
           <p class="text-small">
             © Copyright cheap junk remover 2023.
@@ -2380,5 +2477,6 @@
       </div>
     </footer>
     <script src="js/main.js"></script>
+    <script src="https://voolt-template-asset.b-cdn.net/promo/voolt-marketing-lps.js?v=40"></script>
   </body>
 </html>

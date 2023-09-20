@@ -1,0 +1,11 @@
+<svg width="49" height="48" viewBox="0 0 49 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Icons">
+<path id="Vector" d="M40.5 16.068V12.996C40.5 12.446 40.07 12 39.54 12H17.46C16.93 12 16.5 12.446 16.5 12.996V16.068C16.5 21.714 20.124 26.475 25.088 28C20.124 29.526 16.5 34.287 16.5 39.932V43.004C16.5 43.554 16.93 44 17.46 44H39.54C40.07 44 40.5 43.554 40.5 43.004V39.932C40.5 34.287 36.876 29.525 31.912 28C36.876 26.474 40.5 21.713 40.5 16.068Z" fill="#DD1515"/>
+<path id="Vector_2" d="M10 7.5H39" stroke="#111111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_3" d="M10 40.5H39" stroke="#111111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_4" d="M16.037 35.748C18.252 33.726 21.209 32.5 24.5 32.5C27.299 32.5 29.903 33.421 32.003 34.982" stroke="#111111" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_5" d="M37 7.5V11.5C37 18.404 31.404 24 24.5 24C18.504 24 13.494 19.779 12.281 14.146" stroke="#111111" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_6" d="M24.5 24C17.596 24 12 29.596 12 36.5V39.851" stroke="#111111" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_7" d="M37 40.3402V36.5002C37 33.4542 35.91 30.6622 34.1 28.4932" stroke="#111111" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</svg>

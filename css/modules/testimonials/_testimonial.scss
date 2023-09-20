@@ -8,7 +8,7 @@
     align-items: center;
     gap: var(--spacing-32, 32px);
     h2 {
-      padding-top: 32px;
+      padding-top: 51px;
     }
   }
   .text-small {
@@ -29,6 +29,10 @@
   border-radius: var(--border-4, 4px);
   border: 1px solid var(--neutral-grey-light, rgba(17, 17, 17, 0.07));
   background: var(--neutral-white, #fff);
+  .stars {
+    display: flex;
+    gap: 2px;
+  }
 }
 .testimonial-top {
   display: flex;

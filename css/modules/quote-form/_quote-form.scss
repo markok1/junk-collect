@@ -1,28 +1,25 @@
-// //hides the entire section, when transitioning between the
-// screens add the hide-form class to the form holder and than close it by adding
-// a display none to the whole section to get rid of the blur
-.quote-form {
-  display: none;
-}
 .blur {
   background: var(--neutral-grey-dark, rgba(17, 17, 17, 0.64));
   position: fixed;
   inset: 0;
-  z-index: 1;
+  z-index: 3;
 }
 .form-holder {
+  overflow: auto;
   background: var(--neutral-white, #fff);
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 
   position: fixed;
-  top: 10vh;
+  top: 65px;
   left: 8px;
   right: 8px;
-  z-index: 3;
+  bottom: 65px;
+  z-index: 10;
 
   max-width: 358px;
+  max-height: 548px;
 
   margin: auto;
   padding: var(--padding-32, 32px) var(--padding-16, 16px);
@@ -32,6 +29,10 @@
     width: 100%;
     text-align: center;
     text-transform: capitalize;
+  }
+  &::-webkit-scrollbar {
+    width: 0;
+    height: 0;
   }
 }
 .close-form {
@@ -47,7 +48,7 @@
   position: fixed;
   width: 100%;
   top: 0;
-  z-index: 2;
+  z-index: 4;
   a {
     display: flex;
     padding: var(--padding-8, 8px) 0px;
@@ -61,25 +62,34 @@
 }
 
 .quote-form--completed {
+  h3 {
+    margin-bottom: 78px;
+  }
+  overflow: auto;
   position: fixed;
   z-index: 4;
-  top: 10vh;
+  top: 65px;
   left: 8px;
   right: 8px;
+  bottom: 65px;
 
   border-radius: var(--radius-8, 8px);
   background: var(--neutral-white, #fff);
 
   display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 358px;
+  flex-direction: column;
+
+  max-width: 358px;
+  max-height: 548px;
   margin: auto;
   padding: var(--padding-32, 32px) var(--padding-16, 16px);
-  flex-direction: column;
   gap: var(--24px, 24px);
 
   text-align: center;
+  &::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
 }
 .hide-form {
   display: none;

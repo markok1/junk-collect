@@ -15,40 +15,15 @@
       }
     });
   }
-  if (sectionForm.length) {
-    $(".form-dropdown-label").click(function (e) {
-      e.preventDefault();
-      if ($(this).parent().hasClass("quote-form-active")) {
-        $(this).parent().removeClass("quote-form-active");
-      } else {
-        $(this).parent().addClass("quote-form-active");
-      }
-    });
-    $(
-      ".form-dropdown-container .dropdown-list-custom .dropdown-list-item"
-    ).click(function (e) {
-      e.preventDefault();
-      var val = $(this).find("p").text();
-      $(this)
-        .parent()
-        .parent()
-        .parent()
-        .parent()
-        .parent()
-        .find(".option-text")
-        .text(val);
-      $(this)
-        .parent()
-        .parent()
-        .find(".dropdown-list-item--active")
-        .removeClass("dropdown-list-item--active");
-      $(this).addClass("dropdown-list-item--active");
-      $(".quote-form-active").removeClass("quote-form-active");
-    });
-    $(document).click(function (event) {
-      if (!$(event.target).closest(".form-dropdown-container").length) {
-        $(".quote-form-active").removeClass("quote-form-active");
-      }
-    });
-  }
 })(jQuery);
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show-fade");
+    }
+  });
+});
+
+const hiddenElements = document.querySelectorAll(".hidden-fade");
+hiddenElements.forEach((el) => observer.observe(el));
